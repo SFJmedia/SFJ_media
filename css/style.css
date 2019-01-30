@@ -75,9 +75,6 @@ a:hover {
     float: left;
     width: 100%;
 }
-.logo_container img {
-    width: 50%;
-}
 .menu_container {
     float: left;
     width: 100%;
@@ -938,7 +935,68 @@ img.img-responsive.wht {
 }
 
 /* About css end */
+/* Ad format css start */
 
+.ad_format_entr {
+    float: left;
+    width: 100%;
+    position: relative;
+    text-align: right;
+}
+.ad_format_entr span {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 15px 0;
+    float: left;
+    width: 100%;
+}
+.ad_format_entr span:after {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid #fe9100;
+    width: 100px;
+    height: 45px;
+    right: 0;
+}
+.rich_media_container{
+    float: left;
+    width: 100%;
+    background-image: url('../images/ad_formats_rich_bg.jpg');
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.rich_hde {
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 1% 0;
+    position: relative;
+}
+.rich_hde span{
+    float: left;
+    width: 100%;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 1% 0;
+}
+.rich_hde span:after {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid #fe9100;
+    width: 100px;
+    height: 40px;
+    right:calc(100% - 54%);
+}
+.three_banners_section {
+    float: left;
+    width: 100%;
+    background-image: url('../images/ad_formats_rich_ads_background.jpg');
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+/* Ad format css end */
 
 
 
