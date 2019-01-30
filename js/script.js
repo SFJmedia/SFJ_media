@@ -43,6 +43,7 @@ $(document).ready(function () {
     });
     $('#back-to-top').tooltip('show');
     AOS.init();
+    new WOW().init();
 });
 $(function () {
     function isScrolledIntoView($elem) {
