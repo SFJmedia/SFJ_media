@@ -11,20 +11,6 @@ jQuery(document).on('scroll', function () {
         jQuery(".header_container").removeClass("header_container_scroll");
     }
 });
-var button = document.getElementById('hamburger-menu'),
-        span = button.getElementsByTagName('span')[0];
-button.onclick = function () {
-    span.classList.toggle('hamburger-menu-button-close');
-};
-$('#hamburger-menu').on('click', toggleOnClass);
-function toggleOnClass(event) {
-    var toggleElementId = '#' + $(this).data('toggle'),
-            element = $(toggleElementId);
-    element.toggleClass('on');
-}
-$('.menu li a').on("click", function () {
-    $('#hamburger-menu').click();
-});
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
@@ -44,6 +30,9 @@ $(document).ready(function () {
     $('#back-to-top').tooltip('show');
     AOS.init();
     new WOW().init();
+    $('body,html').animate({
+        scrollTop: $(this.hash).offset().top
+    }, 3000);
 });
 $(function () {
     function isScrolledIntoView($elem) {

@@ -17,41 +17,54 @@
     <body>
         <div class="main_container">
             <header> 
-                <div class="header_container header_container_scroll">
+                <div class="header_container">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-1">
+                            <div class="col-sm-3">
                                 <div class="logo_container">
                                     <a href="/"><img src="images/logo.png" class="img-responsive" alt="sfj media" /></a>
                                 </div>
                             </div>
-                            <div class="col-sm-11">
+                            <div class="col-sm-9">
                                 <div class="menu_container">
-                                    <button id="hamburger-menu" data-toggle="ham-navigation" class="hamburger-menu-button"><span class="hamburger-menu-button-open">Menu</span></button>
-                                    <nav id="ham-navigation" class="ham-menu">
-                                        <ul class="menu">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li class="active"><a href="#">About Us</a></li>
-                                            <li class='has_dropdown'><a href="#">Advertisers &nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                                                <div class='dropdown_menus'>
-                                                    <a href="#adv1">Advertisers 1</a>
-                                                    <a href="#adv2">Advertisers 2</a>
-                                                    <a href="#adv3">Advertisers 3</a>
-                                                </div>
-                                            </li>
-                                            <li class='has_dropdown'><a href="#">Publishers &nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                                                <div class='dropdown_menus'>
-                                                    <a href="#pub1">SSD</a>
-                                                    <a href="#pub2">Video Ads</a>
-                                                    <a href="#pub3">AD Formats</a>
-                                                    <a href="#pub3">Performance Solution</a>
-                                                </div>
-                                            </li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Careers</a></li>
-                                            <li><a href="#">Contact Us</a></li>
-                                        </ul>
-                                    </nav>
+                                    <div class="menu_div">
+                                        <div class='navbar navbar-inverse navbar-static-top ' role="navigation">
+                                            <div class='navbar-header'>
+                                                <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+                                                    <span class='sr-only'>Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                                <a class='navbar-brand' href='#'><img src='images/logo.png' alt='Logo' /></a>
+                                            </div>
+                                            <div class='navbar-collapse collapse'>
+                                                <ul class='nav navbar-nav'>
+                                                    <li class=''><a class="men_vis" href="#">Home</a></li>
+                                                    <li class=''><a class="men_vis" href="#">About Us</a></li>
+                                                    <li class='dropdown'><a data-toggle="dropdown" class='men_vis dropdown-toggle' href='#'>Advertisers <b class="caret"></b></a>
+                                                        <ul class='dropdown-menu'>
+                                                            <li class=''><a class='' href='#'>Mobile DSP</a></li>
+                                                            <li class=''><a class='' href='#'>Video ADS</a></li>
+                                                            <li class=''><a class='' href='#'>Performance Marketing</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class='dropdown'><a data-toggle="dropdown" class='men_vis dropdown-toggle' href='#'>Publishers <b class="caret"></b></a>
+                                                        <ul class='dropdown-menu'>
+                                                            <li class=''><a class='' href='#'>SSD</a></li>
+                                                            <li class=''><a class='' href='#'>Video ADS</a></li>
+                                                            <li class=''><a class='' href='#'>AD Formats</a></li>
+                                                            <li class=''><a class='' href='#'>Performance Solution</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class=''><a class='men_vis' href='#'>Blog</a></li>
+                                                    <li class=''><a class='men_vis' href='#'>Careers</a></li>
+                                                    <li class=''><a class='men_vis' href='#'>Contact Us</a></li>                                                   
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -93,25 +106,25 @@
             <div class='three_banners_section'>
                 <div class='container'>
                     <div class="row">
-                        <div class='col-sm-8 col-sm-offset-1'>
-                            <div class='thr_banner_sec'>
-                                <p><img src="images/ad_formats_rich_ad_01.png" alt="Sfj media" class="img-responsive">
+                        <div class='col-sm-9 col-sm-offset-1'>
+                            <div class='thr_banner_sec' data-aos="fade-up-left">
+                                <p><img src="images/ad_formats_rich_ad_01.png" alt="Sfj media" class="img-responsive" data-aos="fade-up-right">
                                     <span>
                                         Interactive Banners
                                     </span>
                                     An ad that turns any standard IAB position into an animated and interactive experience powered by dozens of capabilities.
                                 </p>
                             </div>
-                            <div class='thr_banner_sec'>
-                                <p><img src="images/ad_formats_rich_ad_02.png" alt="Sfj media" class="img-responsive">
+                            <div class='thr_banner_sec' data-aos="fade-up-left">
+                                <p><img src="images/ad_formats_rich_ad_02.png" alt="Sfj media" class="img-responsive" data-aos="fade-up-right">
                                     <span>
                                         Interstitials Banners
                                     </span>
                                     An ad that turns any standard IAB position into an animated and interactive experience powered by dozens of capabilities.
                                 </p>
                             </div>
-                            <div class='thr_banner_sec'>
-                                <p><img src="images/ad_formats_rich_ad_03.png" alt="Sfj media" class="img-responsive">
+                            <div class='thr_banner_sec' data-aos="fade-up-left">
+                                <p><img src="images/ad_formats_rich_ad_03.png" alt="Sfj media" class="img-responsive" data-aos="fade-up-right">
                                     <span>
                                         Expanding Banners
                                     </span>
@@ -122,92 +135,52 @@
                     </div>
                 </div>
             </div>
-            <div class="count_down_container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="abt_ico_cont">
-                                <img src="images/abt-icon-1.png" alt="Sfj media" class="img-responsive wow rollIn" data-wow-delay="0.5s" data-wow-duration="1s">
-                                <p class="cou_text"> <span class="c-section4"> 4 </span>+ </p>
-                                <b>Offices</b>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="abt_ico_cont">
-                                <img src="images/abt-icon-2.png" alt="Sfj media" class="img-responsive wow rollIn" data-wow-delay="0.5s" data-wow-duration="1s">
-                                <p class="cou_text"> <span class="c-section4"> 30's </span>+ </p>
-                                <b>Campaigns</b>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="abt_ico_cont">
-                                <img src="images/abt-icon-3.png" alt="Sfj media" class="img-responsive wow rollIn" data-wow-delay="0.5s" data-wow-duration="1s">
-                                <p class="cou_text"> <span class="c-section4"> 50  </span>+ </p>
-                                <b>Employees</b>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="abt_ico_cont">
-                                <img src="images/abt-icon-4.png" alt="Sfj media" class="img-responsive wow rollIn" data-wow-delay="0.5s" data-wow-duration="1s">
-                                <p class="cou_text"> <span class="c-section4">60 </span>+ </p>
-                                <b>Billion Ad Requests</b>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mobi_container">
-                <div class="container">
-                    <div class="caro_sect">
-                        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel2" data-slide-to="1"></li>
-                                <li data-target="#myCarousel2" data-slide-to="2"></li>
-                                <li data-target="#myCarousel2" data-slide-to="3"></li>
-                            </ol>
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img src="images/mobile_caro_1.png" alt="sfj media" style="width:100%;">
-                                </div>
-                                <div class="item">
-                                    <img src="images/mobile_caro_2.png" alt="sfj media" style="width:100%;">
-                                </div>
-                                <div class="item">
-                                    <img src="images/mobile_caro_3.png" alt="sfj media" style="width:100%;">
-                                </div>
-                                <div class="item">
-                                    <img src="images/mobile_caro_1.png" alt="sfj media" style="width:100%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class='want_to_work_conta' data-aos="zoom-in-up">
+            <div class='rich_media_container'>
                 <div class='container'>
-                    <div class='want_to_work'>
-                        <i class="fa fa-users" aria-hidden="true"></i> Want to work with us ? <a href='#'>Register Now</a>
+                    <div class='rich_hde'>
+                        <p>The SFJ DSP is engineered to drive high quality installs at scale, <br>
+                            generate increased brand awareness and amplify real-time mobile performance results.</p>
                     </div>
                 </div>
             </div>
+            <div class="mobile_banner_container">
+                <div class="container">
+                    <div class="rich_hde">
+                        <span>Mobile Banners</span>
+                        <p>In the world of mobile advertising,apps and the mobile web. As usual, some perform more successfully than others.<br> As markets become moresaturated and users tend to stick to their favorite apps, banner campaigns can lose their effectiveness,<br> especially when it comes to renewing interest in apps which have already been downloaded.</p>
+                    </div>
+                    <div class="mob_ad_slot_container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="mob_slot_exp" data-aos="fade-right"  data-aos-duration="1500">
+                                    <img src="images/mobil_ads_01.png" class="img-responsive" alt="sfj media" />    
+                                </div>                            
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="mob_slot_exp" data-aos="fade-right" data-aos-duration="2000">
+                                    <img src="images/mobil_ads_02.png" class="img-responsive" alt="sfj media" />    
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="mob_slot_exp" data-aos="fade-right" data-aos-duration="2500">
+                                    <img src="images/mobil_ads_03.png" class="img-responsive" alt="sfj media" />    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad_mob_slt_bottm">
+                        <b>Mobile ad sizes have been defined as the above dimensions by the IAB</b>
+                        <p>Banner ads are either 300×50 or 320×50, while interstitials are either 300×250 or 320×250 
+                            respectively.<br> Rich media and video ads will generally follow the same size guidelines,<br> but will be 
+                            dynamic and interactive as opposed to static.</p>
+                    </div>
+                </div>
+            </div>
+
+
             <footer>
                 <div class="foot_container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-offset-4 col-sm-4">
-                                <div class="soci_cont">
-                                    <span>Follow us on</span>
-                                    <a href=""><img src="images/in.png" class="img-responsive" alt="sfj media" /></a>
-                                    <a href=""><img src="images/fb.png" class="img-responsive" alt="sfj media" /></a>
-                                    <a href=""><img src="images/tw.png" class="img-responsive" alt="sfj media" /></a>
-                                    <a href=""><img src="images/gp.png" class="img-responsive" alt="sfj media" /></a>
-                                    <a href=""><img src="images/sk.png" class="img-responsive" alt="sfj media" /></a>
-                                </div>
-                            </div>                        
-                        </div>
+                    <div class="container">                        
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="cont_details">
@@ -294,6 +267,18 @@
                                     </div>
                                 </div>                                 
                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="soci_cont">
+                                    <span>Follow us on</span>
+                                    <a href=""><img src="images/in.png" class="img-responsive" alt="sfj media" /></a>
+                                    <a href=""><img src="images/fb.png" class="img-responsive" alt="sfj media" /></a>
+                                    <a href=""><img src="images/tw.png" class="img-responsive" alt="sfj media" /></a>
+                                    <a href=""><img src="images/gp.png" class="img-responsive" alt="sfj media" /></a>
+                                    <a href=""><img src="images/sk.png" class="img-responsive" alt="sfj media" /></a>
+                                </div>
+                            </div>                        
                         </div>
                     </div>
                 </div>
