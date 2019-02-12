@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-jQuery(document).on('scroll', function () {
-    var scroll = jQuery(document).scrollTop();
-    if (scroll >= 200) {
-        jQuery(".header_container").addClass("header_container_scroll");
-    } else {
-        jQuery(".header_container").removeClass("header_container_scroll");
-    }
-});
+//jQuery(document).on('scroll', function () {
+//    var scroll = jQuery(document).scrollTop();
+//    if (scroll >= 200) {
+//        jQuery(".header_container").addClass("header_container_scroll");
+//    } else {
+//        jQuery(".header_container").removeClass("header_container_scroll");
+//    }
+//});
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
@@ -28,11 +28,6 @@ $(document).ready(function () {
         return false;
     });
     $('#back-to-top').tooltip('show');
-    AOS.init();
-    new WOW().init();
-    $('body,html').animate({
-        scrollTop: $(this.hash).offset().top
-    }, 3000);
 });
 $(function () {
     function isScrolledIntoView($elem) {
@@ -69,6 +64,3 @@ $(function () {
     });
     startCount();
 });
-
-
-

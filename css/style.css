@@ -155,7 +155,7 @@ a:hover {
     left: 18%;
     padding-bottom: 0;
     position: absolute;
-    top: 42%;
+    top: 25%;
     padding-top: 0;
     bottom: 0;
     text-shadow: none;
@@ -169,8 +169,9 @@ a:hover {
     opacity: 0;
     font-size: 50px;
     line-height: 50px;
-    color: #000;
+    color: #fff;
     font-weight: bold;
+    text-shadow: 5px 5px 5px #000;
 }
 .slide_cont b {
     font-size: 70px;
@@ -233,16 +234,22 @@ a:hover {
     top: calc(100% - 30%);
     display: inherit;
     background-position: top center;
+    display: none;
 }
 .ser_cont_dec {
     float: left;
     width: 100%;
     margin: 2% 0;
+    background-color: #fff !important;
+    margin-top: -30%;
+    z-index: 9999;
+    position: relative;
 }
 .ser_cont {
     float: left;
     width: 100%;    
-    padding: 10px;
+    padding: 5% 10%;
+    min-height: 300px;
 }
 .ser_cont b {
     float: left;
@@ -252,16 +259,8 @@ a:hover {
 }
 .ser_cont img {
     margin: auto;
-    width: 75px;
-    height: 75px;
-    background-color: #333;
-    padding: 15px;
-    border-radius: 50%;
-    transition: 1s all;
-}
-.ser_cont_dec .col-sm-3:hover .ser_cont img {
-    background-color: #2b1850;
-    border-radius: 0;
+    width: 100px;
+    height: 100px;
     transition: 1s all;
 }
 .ser_cont_dec .col-sm-3 {
@@ -269,67 +268,11 @@ a:hover {
     border-right: 1px dotted #000;
     border-bottom: 1px dotted #000;
 }
-.ser_cont_dec .col-sm-3:hover {
-    background-color: rgba(0,0,0,0.5);
-    color: #fff;
-    transition: 1s all;
-}
 .ser_cont_dec .col-sm-3:nth-child(4), .ser_cont_dec .col-sm-3:nth-child(8) {
     border-right: 0px dotted #000;
 }
 .ser_cont_dec .col-sm-3:nth-child(8),.ser_cont_dec .col-sm-3:nth-child(7),.ser_cont_dec .col-sm-3:nth-child(6),.ser_cont_dec .col-sm-3:nth-child(5) {
     border-bottom: 0px dotted #000;
-}
-.whatwedo_container{
-    float: left;
-    width: 100%;
-    background-image: url('../images/whoweare.jpg');
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: 100% 100%;   
-}
-.whatwe_cont{
-    float: left;
-    width: 100%;
-    background-color: #fff;
-    text-align: center;    
-    margin: 10% 0 -10% 0;
-    box-shadow: 1px 10px 5px 2px #ddd;
-    padding: 5%;    
-}
-.head_aft {
-    float: left;
-    width: 100%;
-    margin: 2% 0;
-}
-.head_aft b {
-    float: left;
-    width: 100%; 
-    font-size: 20px;
-    padding: 10px 0;
-    text-transform: uppercase;    
-}
-.head_aft img {
-    margin: auto;
-    width: 50%;
-}
-.lin{
-    float: left;
-    width: 100%;
-    margin: 2% 0;
-}
-.lin a {
-    text-decoration: none;
-    background-color: #3e347c;
-    padding: 12px 15px;
-    border-radius: 20px;
-    color: #fff;
-    transition: 1s;
-}
-.lin a:hover {
-    background-color: #d6a902;
-    border-radius: 0px;
-    transition: 1s;
 }
 .prod_container{
     float: left;
@@ -343,7 +286,6 @@ a:hover {
     background-attachment: fixed;
     background-position: center center;
     background-size: 100% 100%;
-    padding: 10% 0 0;
 }
 .head_divs{
     float: left;
@@ -668,27 +610,6 @@ img.img-responsive.wht {
 
 .back-to-top i {
     padding: 12px;
-}
-.download_broch {
-    position: fixed;
-    right: 0;
-    top: calc(100% - 50%);
-    text-align: center;
-    cursor: pointer;
-    transition: all 400ms linear 0s;
-    z-index: 999999;
-    background-color: #d6a902;
-    border-radius: 20px 0 0 20px;
-}
-.download_broch a{
-    text-decoration: none;
-    color: #000;
-}
-.download_broch i {
-    padding: 15px;
-    border-radius: 50%;
-    color: #000;
-    background-color: #fff;
 }
 .hvr-bounce-to-bottom {
     display: inline-block;
@@ -1048,8 +969,19 @@ img.img-responsive.wht {
 /* Ad format css end */
 
 
-
+#myCarousel_mobile_banner{
+    display: none;
+}
 @media(min-width:320px) and (max-width:767px) {
+    #myCarousel_home_banner {
+        display: none;
+    }
+    #myCarousel_mobile_banner {
+        display: block;
+    }
+    ser_cont_dec {
+        margin-top: 0 !important;
+    }
     .header_container_scroll{
         display: none;
     }
@@ -1088,6 +1020,9 @@ img.img-responsive.wht {
     .service_container {
         overflow: hidden;
     } 
+    .ser_cont_dec {
+        margin-top: 0;
+    }
     .head_div b {
         font-size: 21px;
         line-height: 21px;
@@ -1150,6 +1085,9 @@ img.img-responsive.wht {
     }
     .oops_container {
         background-image: none;
+    }
+    .cor_pro {
+        margin: 5px 0;
     }
 }
 
